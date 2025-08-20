@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Simone Baricca</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sito personale di Simone Baricca: ricerca in microeconomia, organizzazione industriale, economia della salute e CV." />
-  <meta name="author" content="Simone Baricca">
-
-  <!-- Fonts -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simone Baricca — Home</title>
+  <meta name="description" content="Sito personale di Simone Baricca: chi sono, ricerca, CV, gallery e contatti." />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet">
-
-  <!-- CSS -->
-  <style>
-    body { font-family: 'Raleway', sans-serif; font-size: 16px; margin:0; color:#222; line-height:1.6; background:#fff; }
-    h1,h2,h3,h4,h5 { font-family: 'Libre Baskerville', serif; margin-top:0; }
-    header { padding:1.5rem; border-bottom:1px solid #ddd; }
-    header h2 { margin:0; }
-    nav ul { list-style:none; padding:0; margin:1rem 0 0; display:flex; gap:1.5rem; }
-    nav a { text-decoration:none; color:#222; font-weight:600; }
-    nav a:hover { text-decoration:underline; }
-    .container { max-width:1000px; margin:auto; padding:1.5rem; }
-    footer { border-top:1px solid #ddd; padding:2rem; text-align:center; font-size:.9rem; color:#555; }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-
-  <!-- Header -->
   <header class="header container">
-    <h2>Simone Baricca</h2>
-    <nav>
+    <h2 class="logo"><a href="index.html">Simone Baricca</a></h2>
+    <nav class="nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -41,20 +25,35 @@
     </nav>
   </header>
 
-  <!-- PAGE CONTENT -->
-  <section class="container">
-    <h1>Welcome</h1>
-    <p>Benvenuto nel sito personale di Simone Baricca. Usa il menu per navigare tra le diverse pagine: Ricerca, CV, Galleria, Contatti.</p>
-    <p><a href="Simone_Baricca_CV_20_7_25.pdf">Scarica il CV completo (PDF)</a></p>
-  </section>
+  <main class="container two-col">
+    <figure class="portrait">
+      <img src="images/simone.jpg" alt="Foto di Simone Baricca" />
+    </figure>
+    <article>
+      <h1>Welcome!</h1>
+      <p>
+        I am a <strong>Research Fellow</strong> in economics at the
+        <a href="https://www.unive.it/" target="_blank" rel="noopener">University of Venice</a>, working under Prof. Agar Brugiavini within the <strong>Age-It</strong> project.
+      </p>
+      <p>
+        I hold an <strong>MSc in Economics and Political Economy</strong> (110/110 cum laude) from the University of Bologna and a Bachelor's in Economics and Finance from the University of Modena and Reggio Emilia.
+      </p>
+      <p>
+        Research interests: <strong>applied microeconomics</strong>, <strong>industrial organization</strong>, <strong>health economics</strong>, <strong>mathematical economics</strong>, and <strong>game theory</strong>.
+      </p>
+      <p>
+        Current projects include strategic models of product differentiation and the socioeconomic determinants of mortality using SHARE longitudinal data.
+      </p>
+      <p>
+        <a class="btn primary" href="Simone_Baricca_CV_20_7_25.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn" href="research.html">See Research</a>
+      </p>
+    </article>
+  </main>
 
-  <footer>
-    <p>© <span id="year"></span> Simone Baricca</p>
+  <footer class="footer">
+    © <span id="year"></span> Simone Baricca
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
