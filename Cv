@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simone Baricca — CV</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="header container">
+    <h2 class="logo"><a href="index.html">Simone Baricca</a></h2>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a class="active" href="cv.html">CV</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Curriculum Vitae</h1>
+    <p>Download the full CV: <a class="btn" href="Simone_Baricca_CV_20_7_25.pdf" target="_blank" rel="noopener">PDF</a></p>
+
+    <div class="grid">
+      <section class="card">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>MSc, Economics and Political Economy</strong> — Università di Bologna, 110/110 cum laude</li>
+          <li><strong>BSc, Economics and Finance</strong> — Università di Modena e Reggio Emilia</li>
+          <li><strong>Summer Schools</strong> — Urbino (Growth & Development, 2025); Bertinoro (Panel Data Methods, 2025)</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Experience</h3>
+        <ul>
+          <li><strong>Research Fellow</strong> — Università di Venezia (Feb 2025 – present)</li>
+          <li><strong>Research Collaborator</strong> — with Prof. Cerboni Baiardi (Nov 2024 – present)</li>
+          <li><strong>Research Assistant</strong> — Università di Bologna (Mar – Jun 2024)</li>
+          <li><strong>Private Teacher</strong> — LGE Education (Jul 2024 – Apr 2025)</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Skills</h3>
+        <ul>
+          <li>Software: Wolfram Mathematica, MATLAB, Gretl, Stata, LaTeX, MS Office</li>
+          <li>Methods: Econometrics, Panel Data, Difference-in-Differences, Synthetic Control</li>
+          <li>Languages: Italian (native), English (B2), French (basic)</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Simone Baricca</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
