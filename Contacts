@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simone Baricca — Contact</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="header container">
+    <h2 class="logo"><a href="index.html">Simone Baricca</a></h2>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+
+    <section class="card">
+      <p><strong>Email:</strong> <a href="mailto:simone.baricca@unive.it">simone.baricca@unive.it</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/simone-baricca-217978236" target="_blank" rel="noopener">linkedin.com/in/simone-baricca</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/USERNAME" target="_blank" rel="noopener">github.com/USERNAME</a></p>
+    </section>
+
+    <!-- Optional contact form (Formspree or similar) -->
+    <!--
+    <section class="card">
+      <h3>Write me</h3>
+      <form action="https://formspree.io/f/XXXXXXXX" method="POST">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="6" required></textarea></label>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </section>
+    -->
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Simone Baricca</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
