@@ -1,0 +1,39 @@
+/* ---- Base ---- */
+:root{ --bg:#ffffff; --fg:#222; --muted:#555; --border:#e5e7eb; --accent:#222; --accent-ink:#fff; }
+html,body{ height:100%; }
+body{ font-family:'Raleway',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--fg); background:var(--bg); margin:0; line-height:1.7; }
+img{ max-width:100%; display:block; }
+a{ color:var(--accent); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+/* ---- Layout ---- */
+.container{ max-width:1000px; margin:0 auto; padding:1.25rem; }
+.header{ border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.logo a{ color:var(--fg); text-decoration:none; font-family:'Libre Baskerville',serif; }
+.nav ul{ list-style:none; margin:0; padding:0; display:flex; gap:1.25rem; flex-wrap:wrap; }
+.nav a{ font-weight:700; color:var(--fg); }
+.nav a.active{ text-decoration:underline; }
+.footer{ border-top:1px solid var(--border); text-align:center; padding:2rem 1.25rem; color:var(--muted); }
+
+/* ---- Home (two columns) ---- */
+.two-col{ display:grid; grid-template-columns: 1fr; gap:2rem; align-items:start; }
+.portrait img{ border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,.06); }
+@media(min-width:860px){ .two-col{ grid-template-columns: 320px 1fr; } }
+
+/* ---- Cards / UI ---- */
+.card{ background:#fff; border:1px solid var(--border); border-radius:10px; padding:1rem 1.25rem; box-shadow:0 8px 20px rgba(0,0,0,.04); }
+.grid{ display:grid; gap:1rem; }
+.gallery-grid{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+
+.btn{ display:inline-block; border:1px solid var(--accent); color:var(--accent); padding:.55rem .9rem; border-radius:8px; font-weight:700; }
+.btn.primary{ background:var(--accent); color:var(--accent-ink); }
+
+/* ---- Typography ---- */
+h1,h2,h3,h4{ font-family:'Libre Baskerville',serif; margin:.2rem 0 .6rem; }
+p{ margin:.6rem 0; }
+.links .btn{ margin-right:.5rem; }
+
+/* ---- Forms (optional) ---- */
+form{ display:grid; gap:.75rem; }
+input,textarea{ width:100%; padding:.6rem .7rem; border:1px solid var(--border); border-radius:8px; font:inherit; }
+button{ cursor:pointer; }
