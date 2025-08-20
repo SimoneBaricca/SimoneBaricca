@@ -1,130 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Simone Baricca — Ricerca & CV</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Simone Baricca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sito personale di Simone Baricca: ricerca in microeconomia, organizzazione industriale, economia della salute e CV." />
+  <meta name="author" content="Simone Baricca">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet">
+
+  <!-- CSS -->
   <style>
-    body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.6; background:#f7f8fa; color:#1c2128; }
-    header { background:#2563eb; color:white; padding:1rem; position:sticky; top:0; }
-    header .container { display:flex; justify-content:space-between; align-items:center; max-width:1100px; margin:auto; }
-    nav a { color:white; text-decoration:none; margin-left:1rem; font-weight:500; }
+    body { font-family: 'Raleway', sans-serif; font-size: 16px; margin:0; color:#222; line-height:1.6; background:#fff; }
+    h1,h2,h3,h4,h5 { font-family: 'Libre Baskerville', serif; margin-top:0; }
+    header { padding:1.5rem; border-bottom:1px solid #ddd; }
+    header h2 { margin:0; }
+    nav ul { list-style:none; padding:0; margin:1rem 0 0; display:flex; gap:1.5rem; }
+    nav a { text-decoration:none; color:#222; font-weight:600; }
     nav a:hover { text-decoration:underline; }
-    .container { max-width:1100px; margin:auto; padding:1.5rem; }
-    h1,h2,h3 { margin-top:0; }
-    .card { background:white; border:1px solid #e5e7eb; border-radius:12px; padding:1rem; margin-bottom:1rem; }
-    .grid { display:grid; gap:1rem; }
-    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); }
-    .gallery { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
-    figure { margin:0; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; background:white; }
-    figure img { width:100%; height:200px; object-fit:cover; }
-    figcaption { padding:.5rem; font-size:.9rem; color:#555; }
-    footer { text-align:center; padding:2rem; font-size:.9rem; color:#555; border-top:1px solid #ddd; }
+    .container { max-width:1000px; margin:auto; padding:1.5rem; }
+    footer { border-top:1px solid #ddd; padding:2rem; text-align:center; font-size:.9rem; color:#555; }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div><strong>Simone Baricca</strong></div>
-      <nav>
-        <a href="#about">Chi sono</a>
-        <a href="#research">Ricerca</a>
-        <a href="#cv">CV</a>
-        <a href="#gallery">Foto</a>
-        <a href="#contact">Contatti</a>
-      </nav>
-    </div>
+
+  <!-- Header -->
+  <header class="header container">
+    <h2>Simone Baricca</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section id="about" class="container">
-      <div class="card">
-        <h1>Ciao! Sono Simone Baricca</h1>
-        <p>Nato a Reggio Emilia il 31/03/2000. Ricercatore in economia, con interessi in <strong>microeconomia applicata</strong>, <strong>organizzazione industriale</strong>, <strong>game theory</strong>, <strong>economia della salute</strong> e <strong>economia matematica</strong>. Attualmente Research Fellow presso l’Università di Venezia (Age-It project, SHARE Database) e collaboratore in progetti teorici sull’organizzazione industriale con il Prof. Lorenzo Cerboni Baiardi.</p>
-      </div>
-    </section>
-
-    <section id="research" class="container">
-      <h2>Ricerca</h2>
-      <div class="card">
-        <h3>A Substitution Game in Competitive Markets</h3>
-        <p>Con Lorenzo Cerboni Baiardi — Working Paper, 2025. Sviluppa un modello dinamico di concorrenza strategica con differenziazione endogena dei prodotti. Presentato alla 16th Viennese Conference on Optimal Control and Dynamic Games.</p>
-      </div>
-      <div class="card">
-        <h3>Health Economics Project (Age-It, Università di Venezia)</h3>
-        <p>Analisi dei tassi di mortalità in relazione a fattori socioeconomici con dati longitudinali SHARE; valutazione degli effetti delle esposizioni lavorative sulla sopravvivenza delle coorti europee anziane.</p>
-      </div>
-      <div class="card">
-        <h3>Digital Competence in Older Adults</h3>
-        <p>Sviluppo di un questionario di alfabetizzazione digitale per anziani per misurare competenze e atteggiamenti verso l’ICT.</p>
-      </div>
-    </section>
-
-    <section id="cv" class="container">
-      <h2>CV</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Istruzione</h3>
-          <ul>
-            <li><strong>MSc in Economics and Political Economy</strong> – Università di Bologna (2022–2024), 110/110 cum laude, GPA 29.66/30</li>
-            <li><strong>Bachelor in Economics and Finance</strong> – Università di Modena e Reggio Emilia (2019–2022), 110/110</li>
-            <li><strong>Summer Schools</strong> – Urbino (Growth & Development, 2025); Bertinoro (Panel Data Methods, 2025)</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Esperienze</h3>
-          <ul>
-            <li><strong>Research Fellow</strong> – Università di Venezia (Feb 2025 – oggi)</li>
-            <li><strong>Research Collaborator</strong> – con Prof. Cerboni Baiardi (Nov 2024 – oggi)</li>
-            <li><strong>Research Assistant</strong> – Università di Bologna (Mar – Giu 2024)</li>
-            <li><strong>Private Teacher</strong> – LGE Education (Lug 2024 – Apr 2025)</li>
-          </ul>
-          <p><a href="Simone_Baricca_CV_20_7_25.pdf">Scarica il CV completo (PDF)</a></p>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Competenze</h3>
-        <ul>
-          <li>Software: Wolfram Mathematica, MATLAB, Gretl, Stata, LaTeX, MS Office</li>
-          <li>Metodi: Econometria, modelli panel, Difference-in-Differences, Synthetic Control</li>
-          <li>Lingue: Italiano (madrelingua), Inglese (B2), Francese (base)</li>
-          <li>Soft Skills: Organizzazione, autonomia, comunicazione, teamwork</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="gallery" class="container">
-      <h2>Galleria fotografica</h2>
-      <div class="gallery">
-        <figure>
-          <img src="images/conferenza.jpg" alt="Presentazione a conferenza accademica" />
-          <figcaption>Presentazione del working paper alla 16th Viennese Conference on Optimal Control and Dynamic Games.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/ricerca.jpg" alt="Analisi dati economici" />
-          <figcaption>Analisi econometrica su dati SHARE e modelli panel nell’ambito del progetto Age-It.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/lezione.jpg" alt="Docenza privata" />
-          <figcaption>Attività di insegnamento privato in microeconomia e macroeconomia a studenti universitari.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="contact" class="container">
-      <h2>Contatti</h2>
-      <div class="card">
-        <p><strong>Telefono:</strong> (+39) 3423154944</p>
-        <p><strong>Email:</strong> <a href="mailto:simone.baricca@unive.it">simone.baricca@unive.it</a> | <a href="mailto:simone.baricca@studio.unibo.it">simone.baricca@studio.unibo.it</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/simone-baricca-217978236">linkedin.com/in/simone-baricca-217978236</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/USERNAME">@USERNAME</a></p>
-      </div>
-    </section>
-  </main>
+  <!-- PAGE CONTENT -->
+  <section class="container">
+    <h1>Welcome</h1>
+    <p>Benvenuto nel sito personale di Simone Baricca. Usa il menu per navigare tra le diverse pagine: Ricerca, CV, Galleria, Contatti.</p>
+    <p><a href="Simone_Baricca_CV_20_7_25.pdf">Scarica il CV completo (PDF)</a></p>
+  </section>
 
   <footer>
-    © <span id="year"></span> Simone Baricca — Licenza MIT
+    <p>© <span id="year"></span> Simone Baricca</p>
   </footer>
 
   <script>
